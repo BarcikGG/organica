@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@200&family=Righteous&display=swap');
+
+
+:root{
+    --tittle-color: #ffff;
+    --text-color: #f2c4a9;
+    --button-hover-color: #1b3e46;
+    --button-color: #10773e;
+    --background-color: #0d2427;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--tittle-color);
+    background-color: #ffff;
+}
+
+h1{
+    color: var(--tittle-color);
+    font-family: 'Righteous', cursive;
+}
+
+h2{
+    color: var(--tittle-color);
+    font-size: 4rem;
+}
+
+p{
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #3333336c;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 1rem black;
+}
+
+#logo_img{
+    height: 5vh;
+}
+
+#menu-icon{
+    font-size: 3.5rem;
+    display: none;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    margin-left: 4rem;
+    color: var(--font-color);
+}
+
+.navbar a:hover, .navbar a.active{
+    color: var(--button-color);
+    transition: .3s;
+}
+
+section{
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    background-color: var(--background-color);
+}
+
+.main{
+    background-image: url("/img/back_main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h1{
+    text-align: center;
+    color: var(--font-color);
+    font-size: 6rem;
+    margin-bottom: 15%;
+}
+
+.btn{
+    display: inline-block;
+    width: 40vh;
+    margin-top: 2%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--background-color);
+    background-color: var(--button-color);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--font-color);
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.btn:hover{
+    background-color: var(--button-hover-color);
+    transition: .6s;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_card{
+    position: relative;
+    display: flex;
+    border-color: #252424;
+    border-style: outset;
+    justify-content: space-between;
+    width: 150vh;
+    height: 40vh;
+    padding: 3vh 3vh 3vh 3vh;
+    margin-bottom: 5vh;
+}
+
+.about_card_text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.about_card p{
+    font-size: 3rem;
+}
+
+.about_card_img{
+    border-color: var(--text-color);
+    border-style: outset;
+    max-width: 50vh;
+    height: auto;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #2d2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.8rem;
+    font-family: Gilroy;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.product-card button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+footer{
+    height: 10vh;
+    background-color: #252424;
+}
+
+footer h3{
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding-top: calc(5vh - 1rem);
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar a {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+}
+    
+@media only screen and (max-width: 860px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2%;
+        background-color: #333;
+        box-shadow: 0 0.3rem 1rem black;
+        display: none;
+    }
+    
+    .navbar.active {
+        display: block;
+    }
+    
+    .navbar a {
+        margin: 2rem 0;
+        font-size: 3rem;
+        display: block;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .main-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+}
+    
+@media only screen and (max-width: 500px) {
+    .navbar a {
+        font-size: 2rem;
+    }
+    
+    section {
+        margin-top: 5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+      
+    .main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+      
+    .main-content h1 {
+        font-size: 4rem;
+    }
+      
+    .btn {
+        width: 100%;
+        margin-top: 5%;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        font-size: 2rem;
+        border-radius: 2rem;
+    }
+}
