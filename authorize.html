@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Organica shop</title>
+</head>
+<body>
+    <header class="header">
+            <a href="index.html" class="logo">
+                <img src="img/logo_shop.png" id="logo_img" alt="Logo">
+            </a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="#">Links</a>
+                <a href="cart.html"><i class="fa-regular fa-cart-shopping-fast"></i></a>
+                <a href="authorize.html" class="active"><i class="fa-regular fa-user"></i></a>
+            </nav>
+    </header> 
+    
+    <section class="authorize">
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputBox">
+                        <i id="icon" class="fa-regular fa-envelope"></i>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <i id="icon" class="fa-regular fa-lock"></i>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember <a href="#">Forget password</a></label>
+                    </div>
+                    <button class="log-btn">Log in</button>
+                    <div class="register">
+                        <p>Don't have account? <a href="#">Create now</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Made and designed by BarcikGG</h3>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

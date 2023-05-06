@@ -180,7 +180,8 @@ section{
 }
 
 .product-card {
-    background-color: #2d2c2c;
+    background-color: #3333336c;
+    backdrop-filter: blur(4px);
     padding: 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -392,6 +393,129 @@ section{
     cursor: pointer;
     background-color: var(--button-hover-color);
     transition: .6s;
+}
+
+.authorize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/img/back_main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-box{
+    position: relative;
+    border-radius: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    background-color: #3333336c;
+    backdrop-filter: blur(4px);
+}  
+
+.form-value h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.inputBox{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #ffff;
+}
+
+.inputBox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    font-size: 2.5rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    padding: 0 35px 0 5px;
+    color: var(--tittle-color);
+}
+
+#icon{
+    position: absolute;
+    right: 8px;
+    color: var(--tittle-color);
+    font-size: 2rem;
+    top: 20px;
+} 
+
+.forget{
+    float: left;
+    margin: -15px 0 15px;
+    font-size: 1.5rem;
+    color: var(--tittle-color);
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.log-btn{
+    width: 100%;
+    height: 5vh;
+    border-radius: 5vh;
+    background-color: var(--button-hover-color);
+    color: var(--tittle-color);
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.log-btn:hover{
+    scale: 1.05;
+    transition: 0.8s;
+}
+
+.register{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p{
+    color: var(--tittle-color);
+}
+
+.register p a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
 }
 
 footer{
