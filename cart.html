@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Organica shop</title>
+</head>
+<body>
+    <header class="header">
+            <a href="index.html" class="logo">
+                <img src="img/logo_shop.png" id="logo_img" alt="Logo">
+            </a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="#">Safety</a>
+                <a href="#">Links</a>
+                <a href="cart.html" class="active"><i class="fa-regular fa-cart-shopping-fast"></i></a>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+            </nav>
+    </header> 
+    
+    <section class="cart-sect">
+        <div class="cart">
+            <div class="cart-form">
+                <h2 class="heading">Make order</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Surname">
+                    </div>
+                    <div class="input-box">
+                        <input type="phone" placeholder="+7 (999) 999 99 99">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-box-address">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="Street">
+                        <input type="text" placeholder="House">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="3" placeholder="Your message"></textarea>
+                    <input type="submit" value="pay" class="pay-btn">
+                </form>
+            </div>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="img/china.jpg" alt="china">
+                    <div class="cart-item-text">
+                        <h3>Китайская мята</h3>
+                        <p>Краткое описание</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="img/china.jpg" alt="china">
+                    <div class="cart-item-text">
+                        <h3>Китайская мята</h3>
+                        <p>Краткое описание</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="img/china.jpg" alt="china">
+                    <div class="cart-item-text">
+                        <h3>Китайская мята</h3>
+                        <p>Краткое описание</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Made and designed by BarcikGG</h3>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

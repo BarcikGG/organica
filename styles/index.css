@@ -126,6 +126,7 @@ section{
     background-color: var(--button-color);
     font-size: 3rem;
     text-align: center;
+    cursor: pointer;
     color: var(--font-color);
     font-weight: 400;
     letter-spacing: .1rem;
@@ -190,7 +191,6 @@ section{
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -215,6 +215,7 @@ section{
 
 .product-card button {
     background-color: var(--text-color);
+    position: relative;
     color: var(--background-color);
     padding: 10px 20px;
     border: none;
@@ -223,11 +224,127 @@ section{
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-card button:hover {
     background-color: var(--button-hover-color);
     transform: scale(1.05);
+}
+
+.cart{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 5vh;
+}
+
+.cart-form{
+    width: 45%;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    position: relative;
+    background-color: var(--background-color);
+    border-color: var(--text-color);
+    border-style: outset;
+    display: inline-flex;
+    width: 80%;
+    padding: 2vh;
+    margin-bottom: 5vh;
+    border-radius: 1vh;
+    transition: all 0.3s ease;
+}
+
+.cart-item img {
+    max-width: 30%;
+    height: auto;
+}
+
+.cart-item h3{
+    font-size: 3rem;
+}
+
+.cart-item p{
+    font-size: 1.8rem;
+}
+
+.cart-item-text{
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    text-align: center;
+}
+
+.cart-form form{
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cart-form form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cart-form form .input-box input,
+.cart-form form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #ffff;
+    background-color: #333;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.cart-form form .input-box input{
+    width: 49%;
+}
+
+.cart-form form .input-box-address input{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #ffff;
+    background-color: #333;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.pay-btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 2%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--background-color);
+    background-color: var(--text-color);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--background-color);
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.pay-btn:hover{
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    transition: .6s;
 }
 
 footer{
